@@ -1,0 +1,97 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+}
+
+.title {
+    font-size: 4em;
+    color: rgb(143, 143, 143);
+    text-shadow: 0px 1px 1px rgb(0, 0, 0);
+}
+
+.gradient-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    height: 700px;
+}
+
+.gradient {
+    width: 85%;
+    height: 100%;
+    margin: 5% 0% 5% 0%;
+    border: 1px solid rgb(143, 143, 143);
+    border-radius: 10%;
+    background: linear-gradient(180deg, #ff7a7a, #811aff);
+}
+
+input[type="color"] {
+	-webkit-appearance: none;
+	border: 1px solid whitesmoke;
+	width: 32px;
+    height: 32px;
+    padding: 0;
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;
+    background-color: whitesmoke;
+}
+input[type="color"]::-webkit-color-swatch {
+    border: none;
+    border-radius: 50%;
+}
+
+input:focus {
+    outline: none;
+}
+
+.labelAndInput {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100px;
+    color: rgb(113, 113, 113);
+}
+
+.spinKnob {
+    width: 100px;
+    height: 100px;
+    background: conic-gradient(grey, white, grey);
+    border: 0.2px solid rgb(145, 145, 145);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: calc(50% - 500px);
+    transition: all 0.5s;
+}
+
+.dialLabel {
+    position: absolute;
+    display: flex;
+    left: calc(50% - 500px + 19px);;
+    top: 46%;
+    /* top: 45%;
+    left: calc(50% - 500px + 20px); */
+    font-size: 1em;
+    color: rgb(145,145,156);
+    letter-spacing: 3px;
+    transform: none;
+}
+
+.knobDial {
+    width: 2px;
+    height:50%;
+    background: linear-gradient(#ff7a7a, #811aff);
+    position: absolute;
+    left: calc(50% - 1px);
+}

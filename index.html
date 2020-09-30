@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gradient Generator</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <h1 class="title">Gradient Generator</h1>
+    <button class="copyButton">Copy to Clipboard</button>
+
+    <label class="dialLabel">Rotate</label>
+    <div class="spinKnob">
+        <div class="knobDial"></div>
+    </div>
+    <figure class="gradient-box">
+        <div draggable="true" id="topColorBox" class="labelAndInput">
+            <input name="topColor" type="color" value="#ff7a7a"/>
+            <label class="colorLabel" for="topColor">#ff7a7a</label>
+        </div>
+        <div class="gradient">
+
+        </div>
+
+        <div class="labelAndInput">
+            <input name="bottomColor" type="color" value="#811aff"/>
+            <label class="colorLabel" for="bottomColor">#811aff</label>
+        </div>
+    </figure>
+
+</body>
+
+<script src="./gradient.js"></script>
+</html>
